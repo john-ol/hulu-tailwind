@@ -7,10 +7,13 @@ module.exports = {
       fontFamily: {
         main: ['Tajawal', 'sans-serif'],
       },
+      screens: {
+        '3xl': '2000px',
+      },
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [require('tailwind-scrollbar-hide')],
+  plugins: [require('@tailwindcss/line-clamp')],
 }

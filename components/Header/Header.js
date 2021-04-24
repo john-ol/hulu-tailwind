@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import {
   HomeIcon,
   LightningBoltIcon,
@@ -19,7 +20,12 @@ function Header() {
         <HeaderOption Icon={SearchIcon} title='Search' />
         <HeaderOption Icon={UserIcon} title='Account' />
       </ul>
-      <img src='./images/hulu_logo.svg' className='h-[2.5rem] sm:h-[3.2rem]' />
+      <Link href='/'>
+        <img
+          src='./images/hulu_logo.svg'
+          className='cursor-pointer h-[2.5rem] sm:h-[3.2rem]'
+        />
+      </Link>
     </header>
   )
 }
